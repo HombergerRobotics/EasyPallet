@@ -412,7 +412,7 @@ class EasyPalletBuilder:
             return DRCF.posx(x + self.offset[0], y + self.offset[1], z + self.offset[2], self._get_th(th), 180,
                              self.offset[3])
 
-    def get_pose(self, layer, box, palletizing_mode=True):
+    def get_box_pose(self, layer, box, palletizing_mode=True):
         """Calculate the robot pose for a specific box in the project.
 
             The pose is calculated from the box position, layer height, and box
